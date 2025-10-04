@@ -4,6 +4,10 @@
     box-sizing: border-box;
     color: #ffffff;
   }
+
+  a {
+    text-decoration: none;
+  }
   
   body {
     font-family: Arial, sans-serif;
@@ -11,4 +15,31 @@
 
   header {
     background-color: #191866;
+    padding: 60px 0;
+  }
+
+  .header-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar{
+    display: flex;
+    gap: 20px;
+  }
+
+  .searchbar {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border:none;
+    outline:none;
   }
