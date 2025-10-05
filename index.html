@@ -1,51 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1 class="logo">Business<span>Logo</span></h1>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
 
-      <div class="header-right">
-        <nav class="navbar">
-          <a href="#about">About Us</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <input
-          class="searchbar"
-          type="text"
-          placeholder="Search"
-          >
-          <div>
-            <img src="" alt="Instagram" class="sns-logo">
-            <img src="" alt="Twitter" class="sns-logo">
-            <img src="" alt="Facebook" class="sns-logo">
-          </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-left">
-          <h2 class="mainheader">
-            We Are <span>Looking To Expand</span> Our <span>Bussines Team!</span>
-          </h2>
-          <h2 class="subheader">
-            Send Us YOur <span>CV!</span>
-          </h2>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quis ratione blanditiis facere provident. A quidem iusto perspiciatis eaque doloribus recusandae incidunt aut. Omnis quod, voluptates aperiam numquam eligendi magnam.</p>
-          <button class="button">Application Here</button>
+  </head>
+  
+  <body>
+  <!-- swiper section -->
+    <section>
+      <div class="history-section">
+        
+        <div class="history-content">
+        <img src="image/lam-big-01-title.png" alt="01_history" class="history-1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum perspiciatis adipisci optio quia labore 
+            tempore id quidem? Ad nostrum fugit pariatur. Cum ad perspiciatis in dignissimos, voluptas quis. Necessitatibus.
+          </p>
         </div>
-        <img src="https://res.cloudinary.com/da3abynbu/image/upload/v1736499137/samples/chair.png" alt="">
+
+        <img class="mountain-bg" src="image/lam-middle-image.png" alt="mountain">
+
+        
+        <div class="swiper-wrapper-bg">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="image/lam-first-carousel-image.png" alt="swiper-img1">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/lam-second-carousel-image.png" alt="swiper-img2">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/lam-first-carousel-image.png" alt="swiper-img1">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/lam-second-carousel-image.png" alt="swiper-img2">
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="image/lam-first-carousel-image.png" alt="swiper-img1">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/lam-second-carousel-image.png" alt="swiper-img2">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/lam-first-carousel-image.png" alt="swiper-img1">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/lam-second-carousel-image.png" alt="swiper-img2">
+              </div>
+            </div>
+                    
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
-</body>
-</html>
+    </section>  
+    
+    <!-- swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
