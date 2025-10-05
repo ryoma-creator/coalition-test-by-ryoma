@@ -3,19 +3,35 @@
     padding: 0;
     box-sizing: border-box;
     color: #ffffff;
+    font-weight: 100;
+  }
+
+  html, body { overflow-x: hidden; } 
+  img { display:block; max-width:100%; height:auto; }   
+
+  main {
+    flex:1;
+    display: flex;
   }
 
   a {
     text-decoration: none;
   }
+
+  span {
+    font-weight: bold;
+  }
   
   body {
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   header {
     background-color: #191866;
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .header-right{
@@ -30,6 +46,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
 
   .navbar{
@@ -43,3 +60,54 @@
     border:none;
     outline:none;
   }
+
+  .header-right {
+    display:flex;
+
+  }
+
+  /* main section */
+  .hero {
+    flex: 1 1 100%;
+    padding: 60px 20px;
+    width: 100%;
+    display: flex;   
+    background-color: #6f57f3;
+  }
+
+  .hero-left {
+  max-width: 37%; /* 左半分 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+  
+ button {
+    background-color: #191866;
+    border-radius: 20px;
+    padding:10px 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+  @media (max-width: 768px) {
+    .header-right{ display:flex; align-items:center; gap:24px; }
+    .container .header-right { flex-direction: column; gap: 16px; width: 100%; }
+    .container, .header-right, .hero-left { min-width:0; }
+    .navbar { display: flex; justify-content: space-between;}
+    .hero-left { max-width: 100%; }               /* ← 37% を解除 */
+    .header-right { width: 100%; flex-wrap: wrap; gap: 12px; }
+    .searchbar { width: 100%; max-width: none; }  /* 入力が横に突き出すのを防ぐ */
+    .sns-logo { width: 24px; height: 24px; }      /* 必要なら少し小さく */
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    img { 
+        background-attachment: fixed;
+        background-size: cover;
+        }
+      }
+  }
+
+  
